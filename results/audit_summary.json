@@ -1,0 +1,96 @@
+{
+  "advisory_level": {
+    "advisories": 2653,
+    "reversed": 29
+  },
+  "brief_deletion_reentry_sensitivity": {
+    "bridged_gaps": 873,
+    "decisions": 4130,
+    "reversals": 31
+  },
+  "censor_reasons": {
+    "absent": 8,
+    "administrative": 3203,
+    "deleted": 882,
+    "unknown": 3,
+    "withdrawn": 34
+  },
+  "inception_revision_types": {
+    "Other record content": 8118,
+    "Package identity or presence": 85,
+    "Predicate support or validity": 296,
+    "Record lifecycle": 1085,
+    "Version predicate": 521
+  },
+  "initial_followup_days": {
+    "25%": 288.83454861111113,
+    "50%": 569.5821064814814,
+    "75%": 1016.561802662037,
+    "count": 4130.0,
+    "max": 1411.5196064814816,
+    "mean": 641.1003811093176,
+    "min": 0.010729166666666666,
+    "std": 446.72186193220045
+  },
+  "main_registry_flow": {
+    "included": 4130,
+    "registry_unavailable": 4,
+    "release_not_found": 235,
+    "released_after_decision": 44,
+    "stable_initial_candidates": 4413
+  },
+  "no_custom_annotation_sensitivity": {
+    "advisories": 2325,
+    "ci_high_pct": 0.9163848232477919,
+    "ci_low_pct": 0.30784116427274594,
+    "decisions": 3696,
+    "endpoint_affected": 21,
+    "group": "No custom range annotation in observed package history",
+    "median_first_reversal_days": 3.8003009259259257,
+    "median_followup_days": 587.7423958333334,
+    "nonadministrative_censor": 878,
+    "packages": 1170,
+    "returned_unaffected": 0,
+    "reversal_advisories": 20,
+    "reversal_packages": 19,
+    "reversal_pct": 0.5681818181818182,
+    "reversals": 21
+  },
+  "polling_phase_ranges": {
+    "1": {
+      "max": 18.189108796296296,
+      "median": 11.11042824074074,
+      "min": 7.1891087962962965
+    },
+    "7": {
+      "max": 109.1891087962963,
+      "median": 84.34424768518518,
+      "min": 49.49008101851852
+    },
+    "30": {
+      "max": 432.6104513888889,
+      "median": 346.19841435185185,
+      "min": 294.32341435185185
+    }
+  },
+  "reversal_episodes": {
+    "at_least_1_day": 29,
+    "at_least_7_days": 29,
+    "count": 30,
+    "median_observed_affected_days": 476.22755787037033
+  },
+  "reversal_latency": {
+    "1": 6,
+    "180": 24,
+    "30": 21,
+    "365": 27,
+    "7": 16,
+    "90": 23,
+    "max_days": 769.7708564814815
+  },
+  "semantic_filter_validation": {
+    "followup_snapshot_checks": 7317,
+    "missed_changes": 0,
+    "state_changes": 31
+  }
+}

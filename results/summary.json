@@ -1,0 +1,85 @@
+{
+  "corpus": {
+    "advisories": 13760,
+    "edits": 43624,
+    "exclusions": {
+      "eligible": 3920,
+      "outside_inception_window": 8830,
+      "publication_lag": 1010
+    },
+    "inception_advisories": 3920,
+    "inception_edits": 10105,
+    "inception_semantic_edits": 1987,
+    "inception_snapshots": 14025,
+    "inception_with_edits": 3152,
+    "inception_with_semantic_edits": 1037,
+    "semantic_edits": 12822,
+    "snapshots": 57384
+  },
+  "counts": {
+    "registry_unavailable": 9,
+    "release_not_found": 533,
+    "released_after_decision": 58,
+    "stable_candidate_decisions": 6092
+  },
+  "cutoff": "2026-09-27T12:36:00+00:00",
+  "ecosystems": [
+    {
+      "advisories": 1200,
+      "ci_high_pct": 1.4994794292774354,
+      "ci_low_pct": 0.5201788014016593,
+      "decisions": 1740,
+      "endpoint_affected": 16,
+      "group": "npm",
+      "median_first_reversal_days": 1.9356712962962963,
+      "median_followup_days": 568.8580324074074,
+      "nonadministrative_censor": 237,
+      "packages": 777,
+      "returned_unaffected": 1,
+      "reversal_advisories": 16,
+      "reversal_packages": 16,
+      "reversal_pct": 0.9770114942528736,
+      "reversals": 17
+    },
+    {
+      "advisories": 1459,
+      "ci_high_pct": 1.0309278350515463,
+      "ci_low_pct": 0.23567440693028335,
+      "decisions": 2390,
+      "endpoint_affected": 13,
+      "group": "PyPI",
+      "median_first_reversal_days": 12.958761574074074,
+      "median_followup_days": 580.7003472222223,
+      "nonadministrative_censor": 690,
+      "packages": 512,
+      "returned_unaffected": 0,
+      "reversal_advisories": 13,
+      "reversal_packages": 12,
+      "reversal_pct": 0.5439330543933054,
+      "reversals": 13
+    }
+  ],
+  "main": {
+    "advisories": 2653,
+    "ci_high_pct": 1.0860987735659733,
+    "ci_low_pct": 0.447531807169794,
+    "decisions": 4130,
+    "endpoint_affected": 29,
+    "group": "All",
+    "median_first_reversal_days": 4.833524305555556,
+    "median_followup_days": 569.5821064814814,
+    "nonadministrative_censor": 927,
+    "packages": 1289,
+    "returned_unaffected": 1,
+    "reversal_advisories": 29,
+    "reversal_packages": 28,
+    "reversal_pct": 0.7263922518159807,
+    "reversals": 30
+  },
+  "workload": {
+    "actual_status_changes": 25,
+    "all_associated_revision_checks": 5792,
+    "horizon_days": 180,
+    "semantic_associated_revision_checks": 253
+  }
+}

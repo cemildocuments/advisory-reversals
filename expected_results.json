@@ -1,0 +1,26 @@
+{
+  "algorithm": "SHA-256; gzip files hashed after decompression",
+  "sha256": {
+    "results/advisories.jsonl.gz": "9829cd671e157bb216cac494079cb8aa6d3b8374f98160d58a941c8ff322cbad",
+    "results/audit_summary.json": "6b5c1cf10e35d4e99ea7b690eb9521762ddf3884f2d8566109cac22c5288a53f",
+    "results/candidates.jsonl.gz": "47bc57e68c0a5ef891379b425192346a2e4969274903c1e9261b03789a95b328",
+    "results/case_traces.csv": "018109af126c45fbc1a0373220c95c1f8a659b49513708dd7f11eeed7245c2ce",
+    "results/cohort_counts.csv": "70769da636ff98c9292c9cc2a0e46326e042cf6ae73ccc48fd43826ae06b35ac",
+    "results/decision_histories.jsonl.gz": "eb44339aba7e6365e34832244d26b0411015e5c86470f6a32a1aa1ddc43410ce",
+    "results/decisions.csv": "f65b9e45b733bd8e09a04d4792bee79f39168774eb967b4c343266ab62ce5198",
+    "results/excluded_initial_decisions.csv": "783d18bfc33701ec08d879314f9678811c91663fa1892a2d27f75888a2ba8480",
+    "results/horizon_rates.csv": "2e94277b607d49b2736d3bb8b97eb05339a0ab3cdeb85721446a328ee9e120ad",
+    "results/policy_decisions.csv.gz": "93b0b98fa5111c1788c3871ad16f63bfef1f095597cf5a6583a70cf5667e55b9",
+    "results/policy_replay.csv": "a19c44eb8eacd89445020b5620ceaae1a7021d7f75a568b4d21e53465e7f5819",
+    "results/polling_phase_sensitivity.csv": "d27c94c90003a72c713dc62ee8d69ffba7e3bf9da3f3ccb9c23da23666766d11",
+    "results/preparation_counts.json": "6a05d70481f86e4801680d396eeddb308597b1a5a588ba4ff9c58a7ef0a5bc35",
+    "results/registry_packages.json": "a839d6c2d2550de11442566bcc497bcd42d9d0c11477f8ac3fafa6a42a1641b8",
+    "results/reversals.csv": "45e917dfebae73f9fed06a93d786564ee836664b860e09631e813d6c9f4fd9b6",
+    "results/revision_events.jsonl.gz": "7273f53fde5b789dd2040e865b3bdf120a4b30a762b73d4b34338151542cf89c",
+    "results/revision_types.csv": "6257d8a552af725f0a3542895e5e8f5813b722b73c0b880707270a997aa56952",
+    "results/sensitivity.csv": "c58a7148adb57f714b1d48b30215e9e2d88f2ed314b35866d50df82ddab553f7",
+    "results/summary.json": "90daccc4b3ac03e1faa6924a0d99b2ff6aa5fd5c41be27bc971922b34219e3ae",
+    "results/time_to_reversal.csv": "a6c283275fc4e1f9e2fa04a830c71b5e06670196b3b7bd58f7a001ca494aa64c",
+    "results/yearly_rates.csv": "804cbb85bdd8af7dbc63d2ad4f8315bcf5192d2e321f48d9745d9aba426bad1f"
+  }
+}
