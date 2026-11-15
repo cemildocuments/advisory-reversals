@@ -1,7 +1,9 @@
-# Remediation Reversals in Vulnerability Advisories
+# Classification Reversals in Vulnerability Advisories
 
 A frozen-data, offline replication of the longitudinal npm and PyPI advisory
 analysis by Cemil Emre Yavas, Nancy R. Mead, and Lei Chen.
+
+Release [v1.1.0](https://github.com/cemildocuments/advisory-reversals/releases/tag/v1.1.0) contains the source code, frozen datasets, and analysis results.
 
 ## Reproduce the experiment
 
@@ -23,7 +25,7 @@ Numerical library thread counts are limited within each process to avoid
 oversubscription. The workload consists of version parsing, historical replay,
 and vectorized statistical resampling and uses CPUs.
 
-The runner verifies input hashes, executes 17 validation tests, reconstructs the
+The runner verifies input hashes, executes 25 validation tests, reconstructs the
 histories and candidate decisions, runs the statistical analysis and policy
 replay, and performs source-trace and sensitivity audits. It then compares every
 result with the frozen expected content hashes. A mismatch produces a nonzero
@@ -35,6 +37,10 @@ The environment was tested with Python 3.12 on macOS with Apple silicon.
 package-cluster bootstrap uses 5,000 draws and seed 260927. Results are ordered
 deterministically. For compressed outputs, validation hashes the decompressed
 bytes so that gzip header timestamps do not affect reproducibility.
+
+Version 1.1.0 adds conditional day-30 estimates, detailed observation-loss audits,
+and delayed-notification semantics to the same September 2026 frozen observations.
+The complete pipeline verifies 35 result files.
 
 ## Frozen inputs and provenance
 
@@ -53,7 +59,10 @@ bytes so that gzip header timestamps do not affect reproducibility.
   status, and original-response SHA-256. PyPI uses the earliest retained
   distribution-upload time for each release. Version matching follows the
   ecosystem's version equivalence rules.
-- `input_checksums.json`: SHA-256 hashes of all frozen input files.
+- `data/revision_commit_metadata.json`: public GitHub metadata for immutable commits
+  implicated in deletion/restoration episodes, including synchronization and rollback
+  messages, timestamps, parents, and source URLs.
+- `input_checksums.json`: SHA-256 hashes of all 1,693 frozen input files.
 
 The source is GitHub's reviewed advisory history, frozen at commit
 `7ccbff3744047c616177c0e7e39cfa6dd0623c0e`, timestamp
@@ -83,7 +92,10 @@ A reversal is the first subsequent affected classification of the selected
 version. It measures recorded classification, not demonstrated exploitability,
 observed deployment, or independently verified patch failure. Counts with full
 observed follow-up and complete 7/30/90/180/365-day follow-up answer different
-questions. Bootstrap intervals resample ecosystem–package clusters; the
+questions. The day-30 landmark denominator includes targets with supported follow-up
+beyond day 30 and no reversal by then; its numerator counts subsequent observed
+reversals. It is a conditional proportion over unequal remaining follow-up, not
+a causal estimate of delaying an upgrade. Bootstrap intervals resample ecosystem–package clusters; the
 Kaplan–Meier series is descriptive.
 
 The 180-day replay compares no checking, UTC-anchored periodic checking, and
@@ -99,8 +111,16 @@ from these metrics. Twenty-four phase offsets are tested for each polling period
 Sensitivity analyses vary the publication lag and include later distinct fixed
 targets. Exploratory checks exclude histories with provider-specific range
 annotations and allow re-entry after deletion gaps of at most 24 hours. The
-re-entry check compares event counts and does not interpolate duration outcomes
-across missing observations.
+re-entry check compares event counts and support at fixed horizons without
+interpolating classifications or duration outcomes inside missing intervals.
+Withdrawal and annotation exclusions use information after cohort entry and are
+descriptive sensitivities. Registry-exclusion diagnostics retain unreleased or
+unmatched targets only in the explicitly labeled record-only sensitivity.
+
+`revision_analysis.py` also compares FIFO historical-payload delivery with querying
+the latest classification at the same delayed notification times. Both retain every
+notification. Tests include a transient state for which the policies differ; the
+observed panel gives identical results at the one-hour and 24-hour delays.
 
 ## Main reproduced results
 
@@ -112,8 +132,12 @@ across missing observations.
 | Observed reversal proportion | 0.73% |
 | Package-cluster 95% bootstrap interval | 0.45–1.09% |
 | Median / maximum time to reversal | 4.83 / 769.77 days |
+| Day-30 landmark: subsequent reversals / eligible targets | 9 / 4,023 (0.22%) |
+| Excluding first-censor withdrawals | 29 / 4,096 (0.71%) |
+| Short-deletion re-entry | 31 / 4,130 (0.75%) |
 | Reversals after excluding custom-range histories | 21 / 3,696 |
-| Daily replay: predicate rechecks / stale-unaffected days | 642,717 / 7.19 |
+| Daily replay, default phase: rechecks / stale-unaffected days | 642,717 / 7.19 |
+| Daily replay: stale-unaffected days over 24 phases | 7.19–18.19 |
 | One-hour revision replay: rechecks / stale-unaffected days | 253 / 1.00 |
 | 24-hour revision replay: rechecks / stale-unaffected days | 251 / 23.79 |
 
@@ -125,6 +149,8 @@ across missing observations.
 | `src/prepare.py` | Hash validation, ordered history reconstruction, cohort and target construction |
 | `src/analyze.py` | Release validation, bootstrap intervals, first-event series, policy replay, selection sensitivity |
 | `src/audit_results.py` | Case traces, record-edit taxonomy, censoring, custom-range and deletion sensitivities, semantic-filter audit |
+| `src/revision_analysis.py` | Day-30 risk set, horizon attrition, restoration and lifecycle audits, withdrawal and release-validation sensitivities, evidence status, yearly counts, and delayed-query replay |
+| `src/test_revision_analysis.py` | Landmark boundaries, re-entry rules, content identity, annotation membership, and delivery-semantics counterexamples |
 | `src/test_versioning.py` | Boundary and normalization cases plus 202,000 randomized membership comparisons |
 | `src/test_analysis.py` | Censoring, release-version equivalence, replay timing, and work-accounting tests |
 | `results/summary.json` | Primary corpus, ecosystem, reversal, and workload counts |
@@ -145,6 +171,14 @@ across missing observations.
 | `results/candidates.jsonl.gz` | Stable initially unaffected fixed targets and their complete source trajectories |
 | `results/advisories.jsonl.gz`, `results/revision_events.jsonl.gz` | Advisory summaries and chronological change records |
 | `results/preparation_counts.json`, `results/registry_packages.json` | Preparation checks and package index |
+| `results/landmark_rates.csv`, `results/withdrawal_sensitivity.csv` | Conditional and withdrawal-exclusion estimates with package-cluster intervals |
+| `results/horizon_attrition.csv`, `results/risk_sets.csv` | Horizon-specific losses, omitted observed events, and event-free survival risk sets |
+| `results/deletion_restoration_audit.csv`, `results/deletion_calendar.csv` | Every deletion gap, its first-censor status, restoration, content identity, and calendar counts |
+| `results/reentry_horizon_counts.csv`, `results/lifecycle_pairs.csv` | Supported horizon counts after short-gap re-entry and paired lifecycle edits |
+| `results/registry_exclusion_audit.csv`, `results/reversal_evidence_audit.csv` | Release-validation exclusions and per-reversal annotation/evidence checks |
+| `results/yearly_cohort_summary.csv` | Inception-year denominators, losses, and 180-day event counts by ecosystem |
+| `results/delivery_semantics.csv`, `results/delivery_semantics_decisions.csv.gz` | Aggregate and decision-level FIFO versus notification-query metrics |
+| `results/revision_summary.json` | Combined summaries of the additional analyses |
 | `expected_results.json` | Expected SHA-256 digest of every numeric output; compressed files use decompressed content |
 
 Times in the numeric tables are UTC Unix seconds unless a column explicitly

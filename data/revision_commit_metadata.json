@@ -1,0 +1,291 @@
+{
+  "06071dd8e490ed354657f8ee158880433cf04997": {
+    "author": {
+      "date": "2022-11-16T00:00:02Z",
+      "email": "45398580+advisory-database[bot]@users.noreply.github.com",
+      "name": "advisory-database[bot]"
+    },
+    "committer": {
+      "date": "2022-11-16T00:00:02Z",
+      "email": "45398580+advisory-database[bot]@users.noreply.github.com",
+      "name": "advisory-database[bot]"
+    },
+    "message": "Advisory Database Sync",
+    "parents": [
+      "51e0aa94f981483a9bd1418f51f53f126429d5cd"
+    ],
+    "sha": "06071dd8e490ed354657f8ee158880433cf04997",
+    "source_url": "https://api.github.com/repos/github/advisory-database/git/commits/06071dd8e490ed354657f8ee158880433cf04997"
+  },
+  "06d7eb4dadca05d997adcf15b87bd7bc5b98ebc5": {
+    "author": {
+      "date": "2023-10-27T21:03:32Z",
+      "email": "45398580+advisory-database[bot]@users.noreply.github.com",
+      "name": "advisory-database[bot]"
+    },
+    "committer": {
+      "date": "2023-10-27T21:03:32Z",
+      "email": "45398580+advisory-database[bot]@users.noreply.github.com",
+      "name": "advisory-database[bot]"
+    },
+    "message": "Publish Advisories\n\nGHSA-cfh5-3ghh-wfjx\nGHSA-wqq4-5wpv-mx2g",
+    "parents": [
+      "0a2a21632f4f5d80d40760e9980cef96621e9ad5"
+    ],
+    "sha": "06d7eb4dadca05d997adcf15b87bd7bc5b98ebc5",
+    "source_url": "https://api.github.com/repos/github/advisory-database/git/commits/06d7eb4dadca05d997adcf15b87bd7bc5b98ebc5"
+  },
+  "0e5b93fbe9710a877874d600867ecef9e3a26e16": {
+    "author": {
+      "date": "2023-10-25T21:31:43Z",
+      "email": "45398580+advisory-database[bot]@users.noreply.github.com",
+      "name": "advisory-database[bot]"
+    },
+    "committer": {
+      "date": "2023-10-25T21:31:43Z",
+      "email": "45398580+advisory-database[bot]@users.noreply.github.com",
+      "name": "advisory-database[bot]"
+    },
+    "message": "Advisory Database Sync",
+    "parents": [
+      "568a30a3741870f439fd632494e4c8baccb5210b"
+    ],
+    "sha": "0e5b93fbe9710a877874d600867ecef9e3a26e16",
+    "source_url": "https://api.github.com/repos/github/advisory-database/git/commits/0e5b93fbe9710a877874d600867ecef9e3a26e16"
+  },
+  "36cb04d42268934e53d7e33c401ed3780a9a0cc6": {
+    "author": {
+      "date": "2023-01-12T23:20:40Z",
+      "email": "45398580+advisory-database[bot]@users.noreply.github.com",
+      "name": "advisory-database[bot]"
+    },
+    "committer": {
+      "date": "2023-01-12T23:20:40Z",
+      "email": "45398580+advisory-database[bot]@users.noreply.github.com",
+      "name": "advisory-database[bot]"
+    },
+    "message": "Publish GHSA-9vvw-cc9w-f27h",
+    "parents": [
+      "3091db5e2000bfbcc2d1882744d7821e0b9bff5d"
+    ],
+    "sha": "36cb04d42268934e53d7e33c401ed3780a9a0cc6",
+    "source_url": "https://api.github.com/repos/github/advisory-database/git/commits/36cb04d42268934e53d7e33c401ed3780a9a0cc6"
+  },
+  "4321648900b0ab1f793441cb99259ade5c35a84c": {
+    "author": {
+      "date": "2022-09-27T08:03:07Z",
+      "email": "45398580+advisory-database[bot]@users.noreply.github.com",
+      "name": "advisory-database[bot]"
+    },
+    "committer": {
+      "date": "2022-09-27T08:03:07Z",
+      "email": "45398580+advisory-database[bot]@users.noreply.github.com",
+      "name": "advisory-database[bot]"
+    },
+    "message": "Advisory Database Sync",
+    "parents": [
+      "f9f40788dea59cda7bcafc1211a7462efaa26134"
+    ],
+    "sha": "4321648900b0ab1f793441cb99259ade5c35a84c",
+    "source_url": "https://api.github.com/repos/github/advisory-database/git/commits/4321648900b0ab1f793441cb99259ade5c35a84c"
+  },
+  "50d8073399a8b682617d0194ed4eab2f8a7bb9e3": {
+    "author": {
+      "date": "2022-10-04T06:19:12Z",
+      "email": "45398580+advisory-database[bot]@users.noreply.github.com",
+      "name": "advisory-database[bot]"
+    },
+    "committer": {
+      "date": "2022-10-04T06:19:12Z",
+      "email": "45398580+advisory-database[bot]@users.noreply.github.com",
+      "name": "advisory-database[bot]"
+    },
+    "message": "Publish Advisories\n\nGHSA-6hcj-qrw3-m66q\nGHSA-xfhg-9pjg-xg7g\nGHSA-237r-mx84-7x8c",
+    "parents": [
+      "f7288a9954f88e108cbb3a31310775c36978ed0d"
+    ],
+    "sha": "50d8073399a8b682617d0194ed4eab2f8a7bb9e3",
+    "source_url": "https://api.github.com/repos/github/advisory-database/git/commits/50d8073399a8b682617d0194ed4eab2f8a7bb9e3"
+  },
+  "6a5f69dc8c2a81d57fcc20022b116c2fedb804dc": {
+    "author": {
+      "date": "2023-10-27T20:48:06Z",
+      "email": "45398580+advisory-database[bot]@users.noreply.github.com",
+      "name": "advisory-database[bot]"
+    },
+    "committer": {
+      "date": "2023-10-27T20:48:06Z",
+      "email": "45398580+advisory-database[bot]@users.noreply.github.com",
+      "name": "advisory-database[bot]"
+    },
+    "message": "Publish Advisories\n\nGHSA-79x9-477g-w256\nGHSA-9xhm-6w5p-335v\nGHSA-mm8h-8587-p46h\nGHSA-mpj8-q39x-wq5h\nGHSA-r2hw-74xv-4gqp\nGHSA-mm8h-8587-p46h\nGHSA-mpj8-q39x-wq5h\nGHSA-r2hw-74xv-4gqp",
+    "parents": [
+      "0d1f136c172c18d412bae75089fa184a448c91cb"
+    ],
+    "sha": "6a5f69dc8c2a81d57fcc20022b116c2fedb804dc",
+    "source_url": "https://api.github.com/repos/github/advisory-database/git/commits/6a5f69dc8c2a81d57fcc20022b116c2fedb804dc"
+  },
+  "6e802f3580cb3721d1719e61fb5051a944030680": {
+    "author": {
+      "date": "2025-07-24T15:06:13Z",
+      "email": "45398580+advisory-database[bot]@users.noreply.github.com",
+      "name": "advisory-database[bot]"
+    },
+    "committer": {
+      "date": "2025-07-24T15:06:13Z",
+      "email": "45398580+advisory-database[bot]@users.noreply.github.com",
+      "name": "advisory-database[bot]"
+    },
+    "message": "Publish Advisories\n\nGHSA-v9mx-4pqq-h232\nGHSA-4j66-8f4r-3pjx",
+    "parents": [
+      "bc6fa1ed8034c43b215be055e4f9014f9e085721"
+    ],
+    "sha": "6e802f3580cb3721d1719e61fb5051a944030680",
+    "source_url": "https://api.github.com/repos/github/advisory-database/git/commits/6e802f3580cb3721d1719e61fb5051a944030680"
+  },
+  "723d106d09a9c5b2c99bac2cfa3c52a7127d1142": {
+    "author": {
+      "date": "2022-08-25T21:17:24Z",
+      "email": "45398580+advisory-database[bot]@users.noreply.github.com",
+      "name": "advisory-database[bot]"
+    },
+    "committer": {
+      "date": "2022-08-25T21:17:24Z",
+      "email": "45398580+advisory-database[bot]@users.noreply.github.com",
+      "name": "advisory-database[bot]"
+    },
+    "message": "Publish GHSA-f825-f98c-gj3g",
+    "parents": [
+      "ae9fb19e49657efa9e7e85043c9e23a75ccbed46"
+    ],
+    "sha": "723d106d09a9c5b2c99bac2cfa3c52a7127d1142",
+    "source_url": "https://api.github.com/repos/github/advisory-database/git/commits/723d106d09a9c5b2c99bac2cfa3c52a7127d1142"
+  },
+  "8e7aeffa8f38bad9359b899ee3377eb9fe7d2dee": {
+    "author": {
+      "date": "2022-11-18T00:01:01Z",
+      "email": "45398580+advisory-database[bot]@users.noreply.github.com",
+      "name": "advisory-database[bot]"
+    },
+    "committer": {
+      "date": "2022-11-18T00:01:01Z",
+      "email": "45398580+advisory-database[bot]@users.noreply.github.com",
+      "name": "advisory-database[bot]"
+    },
+    "message": "Advisory Database Sync",
+    "parents": [
+      "b4fb55f2669be0216baf4cfb9a01fe4533007957"
+    ],
+    "sha": "8e7aeffa8f38bad9359b899ee3377eb9fe7d2dee",
+    "source_url": "https://api.github.com/repos/github/advisory-database/git/commits/8e7aeffa8f38bad9359b899ee3377eb9fe7d2dee"
+  },
+  "8fffea70d1493afe00ec18a515ef6a5e33038687": {
+    "author": {
+      "date": "2023-10-27T21:05:22Z",
+      "email": "45398580+advisory-database[bot]@users.noreply.github.com",
+      "name": "advisory-database[bot]"
+    },
+    "committer": {
+      "date": "2023-10-27T21:05:22Z",
+      "email": "45398580+advisory-database[bot]@users.noreply.github.com",
+      "name": "advisory-database[bot]"
+    },
+    "message": "Publish Advisories\n\nGHSA-65h2-wf7m-q2v8\nGHSA-5chr-wjw5-3gq4\nGHSA-5pr3-m5hm-9956",
+    "parents": [
+      "06d7eb4dadca05d997adcf15b87bd7bc5b98ebc5"
+    ],
+    "sha": "8fffea70d1493afe00ec18a515ef6a5e33038687",
+    "source_url": "https://api.github.com/repos/github/advisory-database/git/commits/8fffea70d1493afe00ec18a515ef6a5e33038687"
+  },
+  "a0c3ca2b4a0ee3690af61320d8da40438bbfd614": {
+    "author": {
+      "date": "2023-01-11T18:45:23Z",
+      "email": "45398580+advisory-database[bot]@users.noreply.github.com",
+      "name": "advisory-database[bot]"
+    },
+    "committer": {
+      "date": "2023-01-11T18:45:23Z",
+      "email": "45398580+advisory-database[bot]@users.noreply.github.com",
+      "name": "advisory-database[bot]"
+    },
+    "message": "Publish GHSA-9vvw-cc9w-f27h",
+    "parents": [
+      "2e446232fc9f72ec85995be02b2f47fdb4a45d93"
+    ],
+    "sha": "a0c3ca2b4a0ee3690af61320d8da40438bbfd614",
+    "source_url": "https://api.github.com/repos/github/advisory-database/git/commits/a0c3ca2b4a0ee3690af61320d8da40438bbfd614"
+  },
+  "ab2d85a123a35f43664638c79dc60b31fe9f912f": {
+    "author": {
+      "date": "2023-01-31T21:02:04Z",
+      "email": "45398580+advisory-database[bot]@users.noreply.github.com",
+      "name": "advisory-database[bot]"
+    },
+    "committer": {
+      "date": "2023-01-31T21:02:04Z",
+      "email": "45398580+advisory-database[bot]@users.noreply.github.com",
+      "name": "advisory-database[bot]"
+    },
+    "message": "Publish GHSA-f825-f98c-gj3g",
+    "parents": [
+      "ec897d677e27cfb1309c05478164b19d91a739b4"
+    ],
+    "sha": "ab2d85a123a35f43664638c79dc60b31fe9f912f",
+    "source_url": "https://api.github.com/repos/github/advisory-database/git/commits/ab2d85a123a35f43664638c79dc60b31fe9f912f"
+  },
+  "b4fb55f2669be0216baf4cfb9a01fe4533007957": {
+    "author": {
+      "date": "2022-11-16T02:53:59Z",
+      "email": "hawaiigal@github.com",
+      "name": "Kailani Chu"
+    },
+    "committer": {
+      "date": "2022-11-16T02:53:59Z",
+      "email": "noreply@github.com",
+      "name": "GitHub"
+    },
+    "message": "Merge pull request #829 from github/revert-database-sync\n\nRevert \"Advisory Database Sync\"",
+    "parents": [
+      "55852d744c6ed6d4bbeb51c30488feacd4d5c641",
+      "293f47f73d8abad5769f6067b9f1cd950cc702c8"
+    ],
+    "sha": "b4fb55f2669be0216baf4cfb9a01fe4533007957",
+    "source_url": "https://api.github.com/repos/github/advisory-database/git/commits/b4fb55f2669be0216baf4cfb9a01fe4533007957"
+  },
+  "bfc9f49fbcbf2f861820572bc24928aa3863ec86": {
+    "author": {
+      "date": "2023-10-27T21:07:50Z",
+      "email": "45398580+advisory-database[bot]@users.noreply.github.com",
+      "name": "advisory-database[bot]"
+    },
+    "committer": {
+      "date": "2023-10-27T21:07:50Z",
+      "email": "45398580+advisory-database[bot]@users.noreply.github.com",
+      "name": "advisory-database[bot]"
+    },
+    "message": "Publish Advisories\n\nGHSA-xwcq-pm8m-c4vf\nGHSA-xwcq-pm8m-c4vf",
+    "parents": [
+      "8fffea70d1493afe00ec18a515ef6a5e33038687"
+    ],
+    "sha": "bfc9f49fbcbf2f861820572bc24928aa3863ec86",
+    "source_url": "https://api.github.com/repos/github/advisory-database/git/commits/bfc9f49fbcbf2f861820572bc24928aa3863ec86"
+  },
+  "c6748480280cd3243e5b29dfaf311415a8868a7c": {
+    "author": {
+      "date": "2023-10-25T18:38:13Z",
+      "email": "45398580+advisory-database[bot]@users.noreply.github.com",
+      "name": "advisory-database[bot]"
+    },
+    "committer": {
+      "date": "2023-10-25T18:38:13Z",
+      "email": "45398580+advisory-database[bot]@users.noreply.github.com",
+      "name": "advisory-database[bot]"
+    },
+    "message": "Advisory Database Sync",
+    "parents": [
+      "88e8360417a3b740e820b92a7df5435ea8284c4d"
+    ],
+    "sha": "c6748480280cd3243e5b29dfaf311415a8868a7c",
+    "source_url": "https://api.github.com/repos/github/advisory-database/git/commits/c6748480280cd3243e5b29dfaf311415a8868a7c"
+  }
+}

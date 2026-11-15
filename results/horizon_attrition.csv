@@ -1,0 +1,6 @@
+horizon_days,included,excluded,reversals_included,reversals_excluded_after_occurrence,deletions,withdrawals,absence_or_unknown,administrative,omitted_reversal_ids
+7,4093,37,15,1,18,13,6,0,GHSA-pj86-cfqh-vqx6
+30,4043,87,20,1,62,19,6,0,GHSA-pj86-cfqh-vqx6
+90,3396,734,22,1,699,27,8,0,GHSA-pj86-cfqh-vqx6
+180,3212,918,22,2,881,27,10,0,GHSA-9jmq-rx5f-8jwq;GHSA-pj86-cfqh-vqx6
+365,2763,1367,23,4,882,31,11,443,GHSA-8ggh-xwr9-3373;GHSA-9jmq-rx5f-8jwq;GHSA-f83h-ghpp-7wcc;GHSA-pj86-cfqh-vqx6

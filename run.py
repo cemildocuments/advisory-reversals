@@ -79,6 +79,7 @@ def main():
             ("02-prepare", ["src/prepare.py", "--workers", str(args.workers)]),
             ("03-analyze", ["src/analyze.py"]),
             ("04-audit", ["src/audit_results.py"]),
+            ("05-revision-analysis", ["src/revision_analysis.py"]),
         ]
         for name, argv in stages:
             print(f"Running {name} ...", flush=True)

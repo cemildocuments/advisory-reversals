@@ -1,0 +1,3 @@
+group,decisions,advisories,packages,reversals,reversal_pct,ci_low_pct,ci_high_pct,reversal_advisories,reversal_packages,returned_unaffected,endpoint_affected,median_first_reversal_days,median_followup_days,nonadministrative_censor,landmark_days,median_remaining_observation_days,remaining_observation_q25,remaining_observation_q75
+Observable and unreversed at day 0,4130,2653,1289,30,0.7263922518159807,0.447531807169794,1.0860987735659733,29,28,1,29,4.833524305555556,569.5821064814814,927,0,569.5821064814814,288.83454861111113,1016.561802662037
+Observable and unreversed at day 30,4023,2572,1264,9,0.22371364653243847,0.07816256322347671,0.4231735127350285,9,8,0,9,277.98349537037035,593.7825462962963,839,30,563.7825462962963,267.72685185185185,996.1776157407407

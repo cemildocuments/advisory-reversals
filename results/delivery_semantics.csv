@@ -1,0 +1,5 @@
+mode,delay_hours,decisions,rechecks,alerts,stale_unaffected_days,stale_affected_days,outdated_notification_payloads
+Historical payload,1.0,4130,253,24,0.9999999999999999,0.041666666666666664,
+Query latest at notification,1.0,4130,253,24,0.9999999999999999,0.041666666666666664,0.0
+Historical payload,24.0,4130,251,23,23.793854166666666,1.0,
+Query latest at notification,24.0,4130,251,23,23.793854166666666,1.0,0.0

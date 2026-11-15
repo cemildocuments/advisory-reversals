@@ -1,0 +1,4 @@
+group,decisions,advisories,packages,reversals,reversal_pct,ci_low_pct,ci_high_pct,reversal_advisories,reversal_packages,returned_unaffected,endpoint_affected,median_first_reversal_days,median_followup_days,nonadministrative_censor
+All primary decisions,4130,2653,1289,30,0.7263922518159807,0.447531807169794,1.0860987735659733,29,28,1,29,4.833524305555556,569.5821064814814,927
+Exclude first-censor withdrawals,4096,2620,1282,29,0.7080078125,0.4346845695519277,1.0641784251642288,28,27,1,28,5.866747685185185,578.2337152777777,893
+Exclude any observed withdrawal through cutoff,4095,2619,1281,29,0.7081807081807082,0.4300713114592182,1.0771578505786148,28,27,1,28,5.866747685185185,578.7816435185185,892

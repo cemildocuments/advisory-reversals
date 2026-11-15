@@ -1,0 +1,465 @@
+{
+  "deletion": {
+    "all_bridge_eligible_gaps": 873,
+    "bridge_gaps_after_earlier_censor": 3,
+    "calendar": [
+      {
+        "advisories": 1,
+        "commits": "723d106d09a9c5b2c99bac2cfa3c52a7127d1142",
+        "date": "2022-08-25",
+        "decisions": 1,
+        "restored_later": 1,
+        "restored_within_24h": 0,
+        "unrestored": 0
+      },
+      {
+        "advisories": 3,
+        "commits": "4321648900b0ab1f793441cb99259ade5c35a84c",
+        "date": "2022-09-27",
+        "decisions": 3,
+        "restored_later": 3,
+        "restored_within_24h": 0,
+        "unrestored": 0
+      },
+      {
+        "advisories": 349,
+        "commits": "06071dd8e490ed354657f8ee158880433cf04997;b4fb55f2669be0216baf4cfb9a01fe4533007957",
+        "date": "2022-11-16",
+        "decisions": 871,
+        "restored_later": 1,
+        "restored_within_24h": 870,
+        "unrestored": 0
+      },
+      {
+        "advisories": 1,
+        "commits": "a0c3ca2b4a0ee3690af61320d8da40438bbfd614",
+        "date": "2023-01-11",
+        "decisions": 1,
+        "restored_later": 1,
+        "restored_within_24h": 0,
+        "unrestored": 0
+      },
+      {
+        "advisories": 5,
+        "commits": "0e5b93fbe9710a877874d600867ecef9e3a26e16;c6748480280cd3243e5b29dfaf311415a8868a7c",
+        "date": "2023-10-25",
+        "decisions": 5,
+        "restored_later": 5,
+        "restored_within_24h": 0,
+        "unrestored": 0
+      },
+      {
+        "advisories": 1,
+        "commits": "6e802f3580cb3721d1719e61fb5051a944030680",
+        "date": "2025-07-24",
+        "decisions": 1,
+        "restored_later": 0,
+        "restored_within_24h": 0,
+        "unrestored": 1
+      }
+    ],
+    "first_censor_advisories": 360,
+    "first_censors": 882,
+    "restored_delay_quantiles_days": {
+      "0.0": 0.1207986111111111,
+      "0.5": 0.1207986111111111,
+      "0.95": 0.1207986111111111,
+      "1.0": 158.98935185185186
+    },
+    "restored_later": 11,
+    "restored_within_24h": 870,
+    "same_blob_at_restoration": 870,
+    "same_classification_at_restoration": 881,
+    "short_gap_seconds": [
+      10437.0
+    ],
+    "unrestored": 1
+  },
+  "deletion_reentry": {
+    "additional_reversal_ids": [
+      "GHSA-3pgj-pg6c-r5p7"
+    ],
+    "advisories": 2653,
+    "ci_high_pct": 1.1179874763685367,
+    "ci_low_pct": 0.4687162231245618,
+    "decisions": 4130,
+    "endpoint_affected": 30,
+    "group": "Resume after deletion gaps at most 24 hours",
+    "median_first_reversal_days": 5.866747685185185,
+    "median_followup_days": 948.7710763888889,
+    "nonadministrative_censor": 58,
+    "packages": 1289,
+    "remaining_censors": {
+      "absent": 8,
+      "administrative": 4072,
+      "deleted": 12,
+      "unknown": 3,
+      "withdrawn": 35
+    },
+    "returned_unaffected": 1,
+    "reversal_advisories": 30,
+    "reversal_packages": 29,
+    "reversal_pct": 0.7506053268765133,
+    "reversals": 31
+  },
+  "delivery_semantics": [
+    {
+      "alerts": 24,
+      "decisions": 4130,
+      "delay_hours": 1.0,
+      "mode": "Historical payload",
+      "outdated_notification_payloads": null,
+      "rechecks": 253,
+      "stale_affected_days": 0.041666666666666664,
+      "stale_unaffected_days": 0.9999999999999999
+    },
+    {
+      "alerts": 24,
+      "decisions": 4130,
+      "delay_hours": 1.0,
+      "mode": "Query latest at notification",
+      "outdated_notification_payloads": 0,
+      "rechecks": 253,
+      "stale_affected_days": 0.041666666666666664,
+      "stale_unaffected_days": 0.9999999999999999
+    },
+    {
+      "alerts": 23,
+      "decisions": 4130,
+      "delay_hours": 24.0,
+      "mode": "Historical payload",
+      "outdated_notification_payloads": null,
+      "rechecks": 251,
+      "stale_affected_days": 1.0,
+      "stale_unaffected_days": 23.793854166666666
+    },
+    {
+      "alerts": 23,
+      "decisions": 4130,
+      "delay_hours": 24.0,
+      "mode": "Query latest at notification",
+      "outdated_notification_payloads": 0,
+      "rechecks": 251,
+      "stale_affected_days": 1.0,
+      "stale_unaffected_days": 23.793854166666666
+    }
+  ],
+  "horizon_attrition": [
+    {
+      "absence_or_unknown": 6,
+      "administrative": 0,
+      "deletions": 18,
+      "excluded": 37,
+      "horizon_days": 7,
+      "included": 4093,
+      "omitted_reversal_ids": "GHSA-pj86-cfqh-vqx6",
+      "reversals_excluded_after_occurrence": 1,
+      "reversals_included": 15,
+      "withdrawals": 13
+    },
+    {
+      "absence_or_unknown": 6,
+      "administrative": 0,
+      "deletions": 62,
+      "excluded": 87,
+      "horizon_days": 30,
+      "included": 4043,
+      "omitted_reversal_ids": "GHSA-pj86-cfqh-vqx6",
+      "reversals_excluded_after_occurrence": 1,
+      "reversals_included": 20,
+      "withdrawals": 19
+    },
+    {
+      "absence_or_unknown": 8,
+      "administrative": 0,
+      "deletions": 699,
+      "excluded": 734,
+      "horizon_days": 90,
+      "included": 3396,
+      "omitted_reversal_ids": "GHSA-pj86-cfqh-vqx6",
+      "reversals_excluded_after_occurrence": 1,
+      "reversals_included": 22,
+      "withdrawals": 27
+    },
+    {
+      "absence_or_unknown": 10,
+      "administrative": 0,
+      "deletions": 881,
+      "excluded": 918,
+      "horizon_days": 180,
+      "included": 3212,
+      "omitted_reversal_ids": "GHSA-9jmq-rx5f-8jwq;GHSA-pj86-cfqh-vqx6",
+      "reversals_excluded_after_occurrence": 2,
+      "reversals_included": 22,
+      "withdrawals": 27
+    },
+    {
+      "absence_or_unknown": 11,
+      "administrative": 443,
+      "deletions": 882,
+      "excluded": 1367,
+      "horizon_days": 365,
+      "included": 2763,
+      "omitted_reversal_ids": "GHSA-8ggh-xwr9-3373;GHSA-9jmq-rx5f-8jwq;GHSA-f83h-ghpp-7wcc;GHSA-pj86-cfqh-vqx6",
+      "reversals_excluded_after_occurrence": 4,
+      "reversals_included": 23,
+      "withdrawals": 31
+    }
+  ],
+  "landmark": [
+    {
+      "advisories": 2653,
+      "ci_high_pct": 1.0860987735659733,
+      "ci_low_pct": 0.447531807169794,
+      "decisions": 4130,
+      "endpoint_affected": 29,
+      "group": "Observable and unreversed at day 0",
+      "landmark_days": 0,
+      "median_first_reversal_days": 4.833524305555556,
+      "median_followup_days": 569.5821064814814,
+      "median_remaining_observation_days": 569.5821064814814,
+      "nonadministrative_censor": 927,
+      "packages": 1289,
+      "remaining_observation_q25": 288.83454861111113,
+      "remaining_observation_q75": 1016.561802662037,
+      "returned_unaffected": 1,
+      "reversal_advisories": 29,
+      "reversal_packages": 28,
+      "reversal_pct": 0.7263922518159807,
+      "reversals": 30
+    },
+    {
+      "advisories": 2572,
+      "ci_high_pct": 0.4231735127350285,
+      "ci_low_pct": 0.07816256322347671,
+      "decisions": 4023,
+      "endpoint_affected": 9,
+      "group": "Observable and unreversed at day 30",
+      "landmark_days": 30,
+      "median_first_reversal_days": 277.98349537037035,
+      "median_followup_days": 593.7825462962963,
+      "median_remaining_observation_days": 563.7825462962963,
+      "nonadministrative_censor": 839,
+      "packages": 1264,
+      "remaining_observation_q25": 267.72685185185185,
+      "remaining_observation_q75": 996.1776157407407,
+      "returned_unaffected": 0,
+      "reversal_advisories": 9,
+      "reversal_packages": 8,
+      "reversal_pct": 0.22371364653243847,
+      "reversals": 9
+    }
+  ],
+  "lifecycle": {
+    "advisories_with_nonlifecycle_semantic_edit": 600,
+    "advisories_with_semantic_edits_only_short_identical_pairs": 354,
+    "byte_identical_pairs_within_24h": 490,
+    "deletion_restoration_pairs": 502,
+    "lifecycle_edits": 1085,
+    "pairs_within_24h": 490,
+    "transitions": {
+      "active -> deleted": 501,
+      "active -> withdrawn": 79,
+      "deleted -> active": 499,
+      "deleted -> withdrawn": 3,
+      "withdrawn -> deleted": 3
+    }
+  },
+  "polling_phase_summary": {
+    "1": {
+      "max": 18.189108796296296,
+      "mean": 11.99833912037037,
+      "median": 11.11042824074074,
+      "min": 7.1891087962962965
+    },
+    "7": {
+      "max": 109.1891087962963,
+      "mean": 81.67120949074074,
+      "median": 84.34424768518518,
+      "min": 49.49008101851852
+    },
+    "30": {
+      "max": 432.6104513888889,
+      "mean": 347.23429398148147,
+      "median": 346.19841435185185,
+      "min": 294.32341435185185
+    }
+  },
+  "record_only_sensitivity": {
+    "advisories": 2860,
+    "ci_high_pct": 1.1675377165533072,
+    "ci_low_pct": 0.5011853782429386,
+    "decisions": 4413,
+    "endpoint_affected": 34,
+    "group": "All stable initial fixed boundaries without release validation",
+    "median_first_reversal_days": 7.1325,
+    "median_followup_days": 600.8649189814815,
+    "nonadministrative_censor": 966,
+    "packages": 1353,
+    "returned_unaffected": 1,
+    "reversal_advisories": 34,
+    "reversal_packages": 32,
+    "reversal_pct": 0.793111262179923,
+    "reversals": 35
+  },
+  "reentry_horizon_counts": [
+    {
+      "horizon_days": 7,
+      "observable_at_horizon_after_short_gap_reentry": 4106,
+      "observed_reversals_by_horizon": 15
+    },
+    {
+      "horizon_days": 30,
+      "observable_at_horizon_after_short_gap_reentry": 4095,
+      "observed_reversals_by_horizon": 20
+    },
+    {
+      "horizon_days": 90,
+      "observable_at_horizon_after_short_gap_reentry": 4084,
+      "observed_reversals_by_horizon": 22
+    },
+    {
+      "horizon_days": 180,
+      "observable_at_horizon_after_short_gap_reentry": 4082,
+      "observed_reversals_by_horizon": 24
+    },
+    {
+      "horizon_days": 365,
+      "observable_at_horizon_after_short_gap_reentry": 3633,
+      "observed_reversals_by_horizon": 25
+    }
+  ],
+  "registry_exclusions": [
+    {
+      "decisions": 4,
+      "later_boundary_replacements": 0,
+      "median_release_delay_days": null,
+      "reason": "registry_unavailable",
+      "record_only_reversals": 0,
+      "released_within_30_days": 0
+    },
+    {
+      "decisions": 235,
+      "later_boundary_replacements": 4,
+      "median_release_delay_days": null,
+      "reason": "release_not_found",
+      "record_only_reversals": 5,
+      "released_within_30_days": 0
+    },
+    {
+      "decisions": 44,
+      "later_boundary_replacements": 2,
+      "median_release_delay_days": 12.10683372557853,
+      "reason": "released_after_decision",
+      "record_only_reversals": 0,
+      "released_within_30_days": 35
+    }
+  ],
+  "reversal_evidence": {
+    "annotation_at_transition": 7,
+    "annotation_bearing_histories": 9,
+    "annotation_elsewhere_only": 2,
+    "direct_transition_conflicts": 1,
+    "status_counts": {
+      "Documented core/annotation conflict": 1,
+      "Other range revision; causal mechanism not adjudicated": 28,
+      "Subsequently withdrawn claim": 1
+    }
+  },
+  "withdrawal_after_earlier_censor": 1,
+  "withdrawal_sensitivity": [
+    {
+      "advisories": 2653,
+      "ci_high_pct": 1.0860987735659733,
+      "ci_low_pct": 0.447531807169794,
+      "decisions": 4130,
+      "endpoint_affected": 29,
+      "group": "All primary decisions",
+      "median_first_reversal_days": 4.833524305555556,
+      "median_followup_days": 569.5821064814814,
+      "nonadministrative_censor": 927,
+      "packages": 1289,
+      "returned_unaffected": 1,
+      "reversal_advisories": 29,
+      "reversal_packages": 28,
+      "reversal_pct": 0.7263922518159807,
+      "reversals": 30
+    },
+    {
+      "advisories": 2620,
+      "ci_high_pct": 1.0641784251642288,
+      "ci_low_pct": 0.4346845695519277,
+      "decisions": 4096,
+      "endpoint_affected": 28,
+      "group": "Exclude first-censor withdrawals",
+      "median_first_reversal_days": 5.866747685185185,
+      "median_followup_days": 578.2337152777777,
+      "nonadministrative_censor": 893,
+      "packages": 1282,
+      "returned_unaffected": 1,
+      "reversal_advisories": 28,
+      "reversal_packages": 27,
+      "reversal_pct": 0.7080078125,
+      "reversals": 29
+    },
+    {
+      "advisories": 2619,
+      "ci_high_pct": 1.0771578505786148,
+      "ci_low_pct": 0.4300713114592182,
+      "decisions": 4095,
+      "endpoint_affected": 28,
+      "group": "Exclude any observed withdrawal through cutoff",
+      "median_first_reversal_days": 5.866747685185185,
+      "median_followup_days": 578.7816435185185,
+      "nonadministrative_censor": 892,
+      "packages": 1281,
+      "returned_unaffected": 1,
+      "reversal_advisories": 28,
+      "reversal_packages": 27,
+      "reversal_pct": 0.7081807081807082,
+      "reversals": 29
+    }
+  ],
+  "yearly_cohorts": [
+    {
+      "PyPI_decisions": 261,
+      "PyPI_reversals": 0,
+      "complete_180_decisions": 315,
+      "complete_180_reversals": 0,
+      "initial_decisions": 1195,
+      "npm_decisions": 54,
+      "npm_reversals": 0,
+      "year": 2022
+    },
+    {
+      "PyPI_decisions": 412,
+      "PyPI_reversals": 1,
+      "complete_180_decisions": 763,
+      "complete_180_reversals": 2,
+      "initial_decisions": 776,
+      "npm_decisions": 351,
+      "npm_reversals": 1,
+      "year": 2023
+    },
+    {
+      "PyPI_decisions": 486,
+      "PyPI_reversals": 4,
+      "complete_180_decisions": 864,
+      "complete_180_reversals": 7,
+      "initial_decisions": 877,
+      "npm_decisions": 378,
+      "npm_reversals": 3,
+      "year": 2024
+    },
+    {
+      "PyPI_decisions": 546,
+      "PyPI_reversals": 3,
+      "complete_180_decisions": 1270,
+      "complete_180_reversals": 13,
+      "initial_decisions": 1282,
+      "npm_decisions": 724,
+      "npm_reversals": 10,
+      "year": 2025
+    }
+  ]
+}
